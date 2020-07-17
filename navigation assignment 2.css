@@ -1,0 +1,138 @@
+body {
+    margin: 0px;
+} 
+
+#pagebannertext {
+    background-image: url(starscape-kosmos-zvezdy2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    display: inline-block;
+/* position: fixed;  */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 220px;
+     /* z-index: 7; */
+    /*clear: left; */
+}
+/* Unable to keep both the border and the nav bar in fixed */
+
+#pagebannertext2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 231px;
+    height: 223px;
+    /* z-index: 5; */
+     /* clear: left; */
+}
+
+.bannerfont {
+    font-size: 50px;
+    font-family: arial;
+    color: blue;
+    text-align: center;
+    font-weight: 900;
+}
+
+.div2 {
+    font-size: 20px;
+    font-family: arial;
+    color: blue;
+    text-align: center;
+    font-weight: 900;
+    clear: left;
+    z-index: 10;
+    overflow: visible;
+}
+
+@font-face {
+    font-family: Hanzel-Extended;
+    src: url(Hanzel_Extended_Bold/hanze_eb.ttf);
+ }
+ 
+ /* * {
+    font-family: Hanzel-Extended;
+ } */
+
+/* text in HTML not matching the @font-face I'm using */
+
+#ogumtext {
+    color: white;
+}
+
+.pagefont {
+    font-size: 50px;
+    font-family: arial;
+    color: blue;
+    text-align: center;
+    font-weight: 900;
+}
+
+/* .homecolor {
+    color: blue;
+} */
+
+/* .homecolor2 {
+    color: blue;
+} */
+/* had to do this, because without it, text color for "Home" and "Contact us" would revert to white */
+
+.homecolor:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Then had to do this because the text for "Home" and "contact us" would remain blue when hovered,
+and even then, I still have to hover directly over the text for the text to change color */
+
+.navbar {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    font-family: arial;
+    margin-top: auto;
+}
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbutton {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: blue;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+
+}
+
+.navbar a:hover, .subnav:hover .subnavbutton {
+    background-color: blue;
+    color: white;
+  }
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0px;
+    background-color: blue;
+    width: 100%;
+    z-index: 16;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}

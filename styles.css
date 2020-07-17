@@ -1,0 +1,53 @@
+body {
+	background-color: lightseagreen;
+}
+
+.heading {
+	color: blue;
+}
+
+.topic {
+	color: green;
+}
+
+.para {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: blueviolet;
+}
+
+.new-p {
+	font-weight: bold;
+	color: brown;
+}
+
+
+a:link {
+	color: salmon;
+	font-family: monospace;
+}
+
+a:hover {
+	color: seagreen;
+	font-size: 25px;
+	font-weight: bold;
+	/* background-color: aquamarine; */
+}
+
+a:visited {
+	color: crimson;
+}
+
+a:active {
+	color:yellow;
+	text-decoration: underline
+}
+#cat-img {
+	border: 5px solid blue;
+	border-radius: 30%;
+	margin-bottom: 40px;
+}
+
+table, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}

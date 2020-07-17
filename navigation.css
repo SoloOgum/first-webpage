@@ -1,0 +1,114 @@
+    body {
+    margin: 0px;
+} 
+
+#pagebannertext {
+    background-image: url(starscape-kosmos-zvezdy2.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    display: inline-block;
+/* position: fixed; */ 
+/* menu covers logo when above is on */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 220px;
+     /* z-index: 7; */
+    /*clear: left; */
+}
+
+#pagebannertext2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 231px;
+    height: 223px;
+    /* z-index: 5; */
+     /* clear: left; */
+}
+
+.bannerfont {
+    font-size: 50px;
+    font-family: arial;
+    color: blue;
+    text-align: center;
+    font-weight: 900;
+}
+
+.div1 {
+    left: 0px;
+    position: relative;
+    height: 100%;
+    width: auto;
+}
+
+/* inline-block not working for banner and div1, had to use margin-left for div2 text */
+
+.div2 {
+    margin-left: 300px;
+    font-size: 20px;
+    /*There's a gap between menu and logo when above font for div2 text is larger and scrolls */
+    font-family: arial;
+    color: blue;
+    text-align: center;
+    /* font-weight: 900; */
+    clear: left;
+    z-index: 10;
+    overflow: visible;
+}
+
+@font-face {
+    font-family: Hanzel-Extended;
+    src: url(Hanzel_Extended_Bold/hanze_eb.ttf);
+ }
+ 
+ /* * {
+ font-family: Hanzel-Extended; 
+ } */
+
+/* text in HTML not matching the @font-face I'm using */
+
+#ogumtext {
+    color: white;
+}
+
+ul {
+list-style-type: none;
+font-family: arial;
+font-size: 20px;
+margin: 0;
+padding: 0px;
+width: 15%;
+background-color: #f1f1f1;
+position: fixed;
+display: inline-block;
+height: 100%;
+overflow: auto;
+}
+
+li a {
+    display: block;
+    color: blue;
+    font-family: arial;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: blue;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: blue;
+    color: white;
+}
+
+.pagefont {
+    font-size: 50px;
+    font-family: arial;
+    color: blue;
+    text-align: center;
+    font-weight: 900;
+}
+
